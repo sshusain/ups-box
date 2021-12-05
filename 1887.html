@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>Box Calculator 0076</title>
+
+    <!-- Required Stylesheets -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"
+    />
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="csv/1887.js"></script>
+    <script type="text/javascript" src="js/algo.js"></script>
+
+    <form class="form-horizontal" onsubmit="calcbox(); return false">
+      <fieldset>
+      
+      <!-- Form Name -->
+      <legend>Box Calculator</legend>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="inputheight">Height</label>  
+        <div class="col-md-2">
+        <input id="inputheight" name="inputheight" type="text" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="inputwidth">Width</label>  
+        <div class="col-md-2">
+        <input id="inputwidth" name="inputwidth" type="text"  class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="inputlength">Length</label>  
+        <div class="col-md-2">
+        <input id="inputlength" name="inputlength" type="text"  class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="inputpackage">Shipment Type</label>
+        <div class="col-md-2">
+          <select id="inputpackage" name="inputpackage" class="form-control">
+            <option value="2">Standard</option>
+            <option value="4">Fragile</option>
+            <option value="6">Custom</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Button (Double) -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submitbutton"></label>
+        <div class="col-md-8">
+          <button id="submitbutton" name="submitbutton" class="btn btn-success" type="submit">Submit</button>
+          <button type="reset" id="resetbutton" name="resetbutton" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="output">Suggested Box</label>  
+        <div class="col-md-4">
+        <input id="output" name="output" type="text" placeholder="" class="form-control input-md" readonly>
+        </div>
+      </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
