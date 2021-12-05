@@ -21,7 +21,7 @@ function calcbox() {
     sub[5] = c
   }
   data.sort((a, b) => a[0]*10000 - b[0]*10000+a[1]*100-b[1]*100+a[2]-b[2]);
-  input = [length, width, height].sort((a, b) => a - b);
+  input = [length, width, height].sort((a, b) => b - a);
   console.log(data)
   var index = 0
   while(index<data.length && isBigger(input,data[index]))
